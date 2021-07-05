@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="com.web.board.mapper.BoardMapper">
+
+ <!-- 게시판 리스트 : select -->
+ <select id="list" resultType="com.web.finalproj.board.dto.BoardVO">
+  select * from(
+   select rownum rnum, no, title, writer, writeDate, hit
+   from(
+   
+    <!-- 맨 처음 데이터를 가져올 때 검색을 해서 가져온다. -->
+    select no, title, writer, writeDate, hit
+    from board
+    
+    <!-- id가 search인 tag를 찾아서 끼워 넣기를 해준다. -->
+    <include refid="search" />
+    order by no desc
+    )
+   )
+<!--   where rnum between 1 and 10 -->
+  where rnum between #{startRow} and #{endRow}
+ </select>
+ </mapper>
