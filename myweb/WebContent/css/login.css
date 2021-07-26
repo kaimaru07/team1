@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* 모든 HTML 요소 초기화 */
+* {margin: 0px; padding: 0px; box-sizing: border-box;}
+html {
+    font-size: 14pt;
+    font-family: "맑은 고딕", 'Courier New', Courier, monospace;
+    font-weight: normal;
+}
+div.width {
+	width: 1920px;
+	padding-top: 15%;
+	padding-left: 40%;
+	padding-right: 40%;
+}
+section {
+	width: 360px;
+}
+
+p {
+	display: inline-block;
+	font-size: 12pt;
+	font-weight: bolder;
+	color: gray;
+}
+
+p.bold {
+	color: black;
+}
+
+div.bottom {
+	width: 360px;
+	font-size: 12pt;
+	color: gray;
+}
+
+div {
+	text-align: center;
+}
+
+div.left {
+	text-align: left;
+	padding-left: 10px;
+	font-size: 10pt;
+	color: #808080;
+	margin-bottom: 20px;
+}
+img.logo {
+	width: 60px;
+}
+
+div > input.text {
+	margin-top: 10px;
+	width: 340px;
+	height: 40px;
+	padding-left: 10px;
+	font-size: 16px;
+}
+
+button {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 340px;
+	height: 40px;
+	padding-left: 10px;
+	font-size: 16px;
+	background-color: #c53105;
+	color: white;
+	border-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #c53105;
+	font-weight: bold;
+}

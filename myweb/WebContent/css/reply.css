@@ -1,0 +1,55 @@
+@charset "UTF-8";
+* {
+	font-family: "맑은 고딕", 'Courier New', Courier, monospace;
+}
+legend{
+    margin-top: 40px;
+    text-align: center;
+    color: #c53105;
+    font-size: 16pt;
+}
+
+form{
+    padding-left: auto;
+    padding-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    text-align: center;
+    color: black
+    
+}
+
+#name{
+    width:70%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    color: black;
+    font-size: 12pt;
+}
+
+#text{
+    width:70%;
+    height: 80px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    color: black;
+    font-size: 12pt;
+    resize: none;
+}
+
+.commit{
+    width:25%;
+    height: 40px;
+	margin-top: 20px;
+    border-radius: 5px;
+    border: 1px white;
+    background-color: #c53105;
+    color: white;
+    font-size: 12pt;
+}
