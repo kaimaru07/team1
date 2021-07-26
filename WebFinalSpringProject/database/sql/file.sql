@@ -1,0 +1,13 @@
+DROP TABLE attfile;
+DROP SEQUENCE attfile_seq;
+
+CREATE SEQUENCE attfile_seq start with 1 NOCACHE;
+CREATE TABLE attfile (
+	fid NUMBER,
+	bid NUMBER,
+	img VARCHAR2(1024) NOT NULL,
+	thumb VARCHAR2(1024) NOT NULL
+);
+
+ALTER TABLE attfile ADD CONSTRAINT attfile_fid_PK PRIMARY KEY(fid);
+ALTER TABLE attfile ADD CONSTRAINT attfile_bid_FK FOREIGN KEY(bid) REFERENCES board(bid) ON DELETE CASCADE;
